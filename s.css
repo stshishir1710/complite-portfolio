@@ -1,0 +1,938 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(main.htm);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.body nav{
+    width: 100%;
+    height: 70px;
+    background-color: #fefefe;
+    box-shadow: 0 8px 32px rgba(32, 32, 32, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+}
+.body nav .logo{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+nav .Second  .num{
+    width: 100px;
+    height: 40px;
+    font-family: "Roboto", sans-serif;
+    outline: none;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: .3s all linear;
+    font-weight: 500;
+}
+nav .Second  .num:hover{
+    background-color: #b4b4b4;
+    transition: .3s all ease-in-out;
+}
+nav .Second  button i{
+    margin-right: 10px;
+}
+#block{
+    background-color: black;
+    color: White;
+}
+.login{
+    width: 100px;
+    height: 40px;
+    font-family: "Roboto", sans-serif;
+    outline: none;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: .3s all linear;
+    font-weight: 600;
+}
+.login:hover{
+    background: #b4b4b4;
+    transition: .3s all linear;
+}
+.block{
+    width: 100px;
+    height: 40px;
+    font-family: "Roboto", sans-serif;
+    outline: none;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #000000;
+    color: #ffffff;
+    transition: .3s all linear;
+    font-weight: 600;
+}
+nav .Second .dn{
+    display: none;
+}
+nav .bar{
+    display: none;
+}
+.body .home-page{
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    display: flex;
+}
+.body .home-page .left{
+    width: 50%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body .home-page .left .left-box{
+    width: 500px;
+}
+.body .home-page .left h1{
+    font-family: sans-serif;
+}
+.body .home-page .left h1 span{
+    color: red;
+}
+.body .home-page .left .about span{
+    color: #ff9100;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+.body .home-page .left .about .high{
+    color: #1b02ff;
+    font-size: 15px;
+}
+.body .home-page .left .p{
+    margin-top: 10px;
+    color: #4a4949;
+}
+.body .home-page .left .input{
+    width: 400px;
+    height: 40px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.body .home-page .left .input input{
+    width: 280px;
+    color: black;
+    padding: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #8c8c8c;
+    border: none;
+    outline: none;
+}
+.body .home-page .left .last{
+    font-family:  sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: #000000;
+    margin-top: 6px;
+}
+.body .home-page .left .last a{
+    color: #8c8c8c;
+    text-decoration: underline;
+}
+.body .home-page .left .input button{
+    width: 120px;
+    border: none;
+    outline: none;
+    background: black;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.body .home-page .right{
+    width: 50%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body .home-page .right img{
+    width: 500px;
+    border-radius: 5px;
+    animation: upDown 2s infinite ease-in-out;
+}
+.body .home-page .right img:hover{
+    animation: upDown2 2s infinite ease-in-out;
+}
+
+/* ------------------Skills-------------- */
+.skills{
+    width: 100%;
+}
+.skills .heading{
+    width: 500px;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.skills .heading h3{
+    font-family: "Merriweather", serif;
+}
+.skills .heading h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 60px;
+}
+.skills .heading p{
+    font-family: "Roboto", sans-serif;
+    font-size: 19px;
+}
+.skills .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skills .container .sub-container{
+    width: 90%;
+    height: 100vh;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+    gap: 20px 80px;
+    margin-top: 10px;
+}
+.skills .container .sub-container .box{
+    background-color: #faf9f9;
+    height: 290px;
+    padding: 10px;
+    padding-top: 30px;
+    border-radius: 10px;
+}
+.skills .container .sub-container .box h1{
+    font-size: 22px;
+    margin-top: 10px;
+}
+.skills .container .sub-container .box p{
+    margin-top: 5px;
+}
+.skills .container .sub-container .box .icon{
+    font-size: 26px;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;align-items: center;
+    margin: 0 auto;
+}
+.skills .container .sub-container .box button{
+    width: 120px;
+    height: 35px;
+    font-family: "Roboto", sans-serif;
+    margin-top: 10px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #4a4949;
+}
+.skills .container .sub-container .box button:hover{
+    background-color: #000000;
+    transition: .3s all linear;
+}
+.skills .container .sub-container .box button i{
+    margin-left: 5px;
+    transition: .3s all linear;
+    animation: pulseText 1s infinite ease-in-out;
+}
+
+/* ------------------This is project------------------ */
+.project{
+    width: 100%;
+    margin-top: 30px;
+}
+.project .heading{
+    width: 500px;
+    height: 150px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.project .heading h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 60px;
+}
+.project .heading p{
+    font-family: "Roboto", sans-serif;
+    font-size: 19px;
+}
+.project .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project .container .sub-container{
+    width: 90%;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    gap: 20px 43px;
+    margin-top: 100px;
+}
+.project .container .sub-container .box{
+    background-color: #f1f1f1;
+    height: 300px;
+    padding: 5px;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+.project .container .sub-container .box h1{
+    font-size: 17px;
+    margin-top: 10px;
+}
+.project .container .sub-container .box p{
+    margin-top: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.project .container .sub-container .box img{
+    width: 230px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;align-items: center;
+    margin: 0 auto;
+}
+.project .container .sub-container .box img:hover{
+    transform: scale(.99);
+    transition: .3s all linear;
+}
+.project .container .sub-container .box button{
+    width: 120px;
+    height: 35px;
+    font-family: "Roboto", sans-serif;
+    margin-top: 10px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #4a4949;
+}
+.project .container .sub-container .box button:hover{
+    background-color: #000000;
+    transition: .3s all linear;
+}
+.project .container .sub-container .box button i{
+    margin-left: 5px;
+    transition: .3s all linear;
+    animation: pulseText 1s infinite ease-in-out;
+}
+/* ----------------------this is resume----------------------- */
+.resume{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resume .box{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+.resume .left{
+    width: 50%;
+    height: 160px;
+    text-align: left; 
+}
+.resume .left h1{
+    font-size: 40px;
+}
+.resume .left p{
+    color: #b4b4b4;
+    margin-top: 10px;
+    width: 400px;
+}
+.resume .left button{
+    width: 110px;
+    height: 35px;
+    background-color: transparent;
+    outline: none;
+    font-size: 10px;
+    margin-top: 7px;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: .3s all linear;
+
+}
+.resume .left button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.resume .right{
+    width: 50%;
+    height: 200px;
+}
+.resume .right i{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border-radius: 7px;
+    margin: 10px 0px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+.resume .right span{
+    margin-left: 6px;
+    font-family: "Roboto", sans-serif;
+    color: #8c8c8c;
+    font-weight: 500;
+}
+/* ------------------------contact-------------------------- */
+.contact{
+    width: 100%;
+}
+.contact .heading{
+    width: 500px;
+    height: 150px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact .heading h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 60px;
+}
+.contact .heading p{
+    font-family: "Roboto", sans-serif;
+    font-size: 19px;
+    color: #9f9f9f;
+}
+.contact .con-box{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+} 
+.contact .con-box .con{
+    width: 90%;
+    height: 600px;
+    box-shadow: 1px 1px 1px #bebebe,-1px -1px 1px #bebebe;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.contact .con-box .left{
+    width: 450px;
+    height: 500px;
+    background-color: #222222;
+    border-radius: 10px;
+    text-align: left;
+    padding: 50px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+.contact .con-box .left h1{
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+.contact .con-box .left i{
+    font-size: 24px;
+    margin-top: 20px;
+}
+.contact .con-box .left p{
+    width: 290px;
+    margin-top: 7px;
+}
+.contact .con-box .left span{
+    margin-left: 20px;
+    font-weight: 500;
+}
+.contact .con-box .right{
+    width: 550px;
+    height: 500px;
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+}
+.contact .con-box .right .up{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact .con-box .right .up .left2{
+    width: 100%;
+}
+.contact .con-box .right .up label{
+    color: #4a4949;
+}
+.contact .con-box .right .up input{
+    width: 97%;
+    padding: 10px;
+    font-size: 17px;
+    color: #8d8d8d;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-top: 10px;
+}
+.contact .con-box .right .up .right2{
+    width: 100%;
+}
+.contact .con-box .right .email{
+    width: 99%;
+    height: 80px;
+    color: #4a4949;
+    font-family: "Roboto", sans-serif;
+    margin-top: 25px;
+}
+.contact .con-box .right .email input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    padding: 10px;
+    font-size: 17px;
+    margin-top: 10px;
+}
+.contact .con-box .right .radio{
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    font-family: "Roboto", sans-serif;
+    color: #4a4949;
+
+}
+.contact .con-box .right .radio label input{
+    width: 12px;
+    height: 12px;
+    transform: scale(1.5);
+    cursor: pointer;
+    margin-left: 20px;
+}
+.contact .con-box .right .radio label{
+    color: rgb(90, 89, 89);
+    cursor: pointer;
+}
+.contact .con-box .right .radio label input[type="radio"]{
+    accent-color: rgb(0, 0, 0);
+}
+.contact .con-box .right .massege{
+    width: 100%;
+    margin-top: 30px;
+    color: #4a4949;
+}
+.contact .con-box .right .massege textarea{
+    margin-top: 10px;
+    width: 100%;
+    height: 80px;
+    resize: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    font-size: 17px;
+    color: #4a4949;
+}
+.contact .con-box .right button{
+    width: 140px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: #4a4949;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 72%;
+    margin-top: 30px;
+}
+/* -----------------------------Footer------------------------------- */
+footer{
+    width: 100%;
+    height: 300px;    
+    margin-top: 50px;
+    position: absolute;
+}
+footer .item{
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
+    margin-top: 200px;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+footer .item ul{
+    display: flex;
+    gap: 10px;
+}
+footer .item ul li a{
+    color: #000000;
+}
+footer .item ul li a:hover{
+    color: red;
+    transition: .2s all;
+}
+footer .item button{
+    width: 120px;
+    height: 40px;
+    background-color: #4a4949;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+.bubbly-button{
+    display: inline-block;
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+    transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+    
+&:focus {
+    outline: 0;
+}
+&:before, &:after{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 140%;
+    height: 100%;
+    left: -20%;
+    z-index: -1000;
+    transition: all ease-in-out 0.5s;
+    background-repeat: no-repeat;
+}
+
+&:before{
+    display: none;
+    top: -75%;
+    background-image:  
+    radial-gradient(circle, #ff0081 20%, transparent 20%),
+    radial-gradient(circle,  transparent 20%, #ff0081 20%, transparent 30%),
+    radial-gradient(circle, #ff0081 20%, transparent 20%), 
+    radial-gradient(circle, #ff0081 20%, transparent 20%),
+    radial-gradient(circle, #ff0081 10%, #ff0081 15%,) transpa#ff0081
+    radial-gradient(circle, #ff0081 20%, transparent 20%),
+    radial-gradient(circle, #ff0081 20%, transparent 20%),
+    radial-gradient(circle, #ff0081 20%, transparent 20%),
+    radial-gradient(circle, #ff0081 20%, transparent 20%);
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+    background-position: 0% 80%, -5% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 85% 30%;
+}
+
+&:after{
+    display: none;
+    bottom: -75%;
+    background-image:  
+    radial-gradient(circle, #ff0081 20%, transparent 20%), 
+    radial-gradient(circle, #ff0081 20%, transparent 20%),
+    radial-gradient(circle,  transparent 10%, #ff0081 15%, transparent 20%),
+    radial-gradient(circle, #ff0081 20%, transparent 20%),
+    radial-gradient(circle, #ff0081 20%, transparent 20%),
+    radial-gradient(circle, #ff0081 20%, transparent 20%),
+    radial-gradient(circle, #ff0081 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+}
+
+&:active{
+    transform: scale(0.9);
+    background-color: darken(#ff0081, 5%);
+    box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+}
+
+&.animate{
+    &:before{
+    display: block;
+    animation: topBubbles ease-in-out 0.75s forwards;
+}
+&:after{
+    display: block;
+    animation: bottomBubbles ease-in-out 0.75s forwards;
+        }
+    }
+}
+@keyframes topBubbles {
+    0%{
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+}
+    50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;}
+100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%;
+}
+}
+@keyframes bottomBubbles {
+0%{
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+}
+50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;}
+100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+    background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%;
+}
+}
+@keyframes upDown {
+    0%, 100% {
+    transform: translateY(0);
+}
+    50% {
+    transform: translateY(-10px);
+}
+}
+@keyframes upDown2 {
+    0%, 100% {
+    transform: translateY(0);
+}
+    50% {
+    transform: translateY(0);
+}
+}
+@keyframes pulseText {
+    0%   { font-size: 13px; }
+    50%  { font-size: 14px; }
+    100% { font-size: 13px; }
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 480px){
+.body nav .logo{
+    width: 250px;
+    margin-left: 40px;
+    }
+.body nav .Third .login,.block{
+    display: none;
+    }
+nav .bar{
+    display: block;
+
+    border-radius: 5px;
+    border: none;
+    font-size: 24px;
+}
+nav .Second .dn{
+    display: block;
+}
+nav .Second{
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    margin-top: 265px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid #000000;
+    transition: .3s all linear;
+}
+nav .Second .bubbly-button{
+    margin-left: 20px;
+    margin-top: 20px;
+    border: 1px solid black;
+}
+nav .hide{
+    transform: translateY(-500px);
+    visibility: hidden;
+    pointer-events: none;
+    transition: .3s all linear;
+}
+.body .home-page{
+    display: grid;
+    margin: 0 auto;
+    padding: 20px;
+}
+.body .home-page .left{
+    margin-left: 7px;
+    width: 360px;
+    height: 300px;
+    order: 2;
+    margin-top: -120px;
+}
+.body .home-page .right{
+    margin-left: 7px;
+    width: 360px;
+    height: 300px;
+    margin-top: px;
+    order: 1;
+}
+.body .home-page .right img{
+    width: 350px;
+    z-index: -1;
+}
+.body .home-page .left .input{
+    width: 350px;
+    height: 90px;
+    display: block;
+    border: none;
+}
+.body .home-page .left .input input{
+    width: 350px;
+    height: 40px;
+    border: 1px solid black;
+    outline: none;
+}
+.body .home-page .left .input button{
+    width: 350px;
+    height: 40px;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+.body .home-page .right{
+    margin-top: 50px;
+}
+.body .home-page .left{
+    margin-top: 50px;
+}
+.skills{
+    width: 100%;
+}
+.skills .heading{
+    width: 90%;
+}
+.skills .container .sub-container{
+    display: block;
+}
+.skills .container .sub-container .box{
+    background-color: #b4b4b4;
+    margin-top: 20px;
+}
+.project{
+    margin-top: 960px;
+}
+.project .heading{
+    width: 90%;
+}
+.project .container .sub-container{
+    display: block;
+    margin-top: 40px;
+}
+.project .container .sub-container .box{
+    margin-top: 20px;
+    height: 330px;
+}
+.project .container .sub-container .box img{
+    width: 270px;
+}
+.resume .box{
+    display: block;
+}
+.resume .box .left{
+    width: 90%;
+}
+.resume .box .right{
+    width: 90%;
+    margin-top: 50px;
+}
+.resume .box .right .ons span{
+    font-size: 12px;
+}
+.contact .heading{
+    width: 90%;
+}
+.contact .con-box .left{
+    width: 100%;
+}
+.contact .con-box .right{
+    width: 100%;
+    margin-top: 70px;
+}
+.contact .con-box .con{
+    display: block;
+    height: 500px;
+    margin-top: 70px;
+}
+.contact .con-box .right .up{
+    display: block;
+}
+.contact .con-box .right .email{
+    margin-top: 130px;
+}
+.contact .con-box .right .up .right2{
+    margin-top: 30px;
+}
+.contact .con-box .right .radio label{
+    font-size: 12px;
+}
+.contact .con-box .right button{
+    position: absolute;
+    margin-left: 190px
+}
+footer{
+    position: absolute;
+    margin-top: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .item{
+    display: inline;
+    width: 90%;
+    height: 200px;
+}
+footer .item p{
+    text-align: center;
+}
+footer .item ul{
+    margin-top: 30px;
+    justify-content: center;
+}
+footer .item ul li{
+    text-align: center;
+}
+footer .item button{
+    margin-top: 30px;
+    width: 100%;
+}
+}
